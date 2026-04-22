@@ -45,7 +45,7 @@ export default function App() {
     formData.append("target_lang", targetLang);
     formData.append("source_lang", sourceLang);
     try {
-      const response = await fetch("https://doctranslate-api.onrender.com", {
+      const response = await fetch("https://doctranslate-api.onrender.com/translate", {
         method: "POST",
         body: formData,
       });
